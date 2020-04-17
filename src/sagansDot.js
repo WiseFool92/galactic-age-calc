@@ -50,6 +50,10 @@ export class Sagan {
   }
   // Calculates life time on Mars
   marsLifeTime () {
-    return Math.abs(math.floor((this.lifeTime / martianAge) - (this.age / martianAge)));
+    return Math.abs(Math.floor((this.lifeTime / martianAge) - (this.age / martianAge)));
+  }
+  // Calculates life time on Jupiter
+  jupiterLifeTime () {
+    return Math.abs(Math.floor((this.lifeTime / jovianAge) - (this.age / jovianAge)));
   }
 }
