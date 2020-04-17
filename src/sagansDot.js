@@ -13,8 +13,12 @@ export class Sagan {
     this.lifeTime = lifeTime;
   }
 
-  // Calculates age on earth
+  // Calculates age on Earth
   earthAge () {
     return Math.floor(this.age);
+  }
+  // Calculates age on Mercury
+  mercuryAge () {
+    return Math.floor(this.age / mercurianAge);
   }
 }
