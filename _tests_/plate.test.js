@@ -15,7 +15,7 @@ describe('Age', () => {
 
   // Test Fails
   test('Is Earth age correct?', () => {
-    expect(user.earthAge()).toEqual(earthTest);
+    expect(user.earthAge()).toEqual(25);
   });
 
   // Test Passes
