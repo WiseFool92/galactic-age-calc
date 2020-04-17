@@ -103,5 +103,11 @@ describe('Life Time', () => {
   // (8 - A) Test Fails
   test('Is Venus life time correct?', () => {
     expect(user.venusLifeTime()).toEqual(54);
-  })
+  });
+  // (8 - B) Test Passes
+  test('Is Venuss life tiem correct?', () => {
+    let alien = (earthTest / .62);
+    let spaceBound = (lifeTime / .62);
+    expect(user.venusLifeTime()).toEqual(Math.floor(spaceBound - alien));
+  });
 });
