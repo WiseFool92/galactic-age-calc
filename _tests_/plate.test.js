@@ -32,7 +32,13 @@ describe('Age', () => {
     expect(user.mercuryAge()).toEqual(alienAge);
   });
 
+  // (3 - A) Test Fails
   test('Is Venus age correct?', () => {
     expect(user.venusAge()).toEqual(55);
+  });
+  // (3 - B) Test Passes
+  test('Is Venus age correct?' , () => {
+    let alienAge = Math.floor(earthTest / .62);
+    expect(user.venusAge()).toEqual(alienAge);
   })
 });
