@@ -48,4 +48,8 @@ export class Sagan {
   venusLifeTime () {
     return Math.abs(Math.floor((this.lifeTime / venitianAge) - (this.age / venitianAge)));
   }
+  // Calculates life time on Mars
+  marsLifeTime () {
+    return Math.abs(math.floor((this.lifeTime / martianAge) - (this.age / martianAge)));
+  }
 }
