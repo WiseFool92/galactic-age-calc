@@ -1,11 +1,18 @@
-import { Triangle } from './../src/triangle.js';
+import { Sagan } from './../src/sagansDot.js';
 
-describe('Triangle', () => {
+// tests ages across various celestial bodies
+describe('Age', () => {
+  let earthTest;
+  let user;
 
-  test('should correctly create a triangle object with three lengths', () => {
-    var triangle = new Triangle(2,4,5);
-    expect(triangle.side1).toEqual(2);
-    expect(triangle.side2).toEqual(4);
-    expect(triangle.side3).toEqual(5);
+  // Activates for each subsequent test below
+  beforeEach (() => {
+    let testDay = new Date();
+    earthTest = 27;
+    testDay.setFullYear()
+  });
+
+  test('Earth age in correct', () => {
+    
   });
 });
