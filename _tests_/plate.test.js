@@ -79,12 +79,16 @@ describe('Life Time', () => {
   });
 
   // (6 - A) Test Fails
-  test('Is Earths Life Time correct?', () => {
+  test('Is Earths life time correct?', () => {
     expect(user.earthLifeTime()).toEqual(12);
   });
-
   // (6 -B) Test Passes
-  test('Is Earths life Time correct?', () => {
+  test('Is Earths life time correct?', () => {
     expect(user.earthLifeTime()).toEqual(lifeTime - earthTest);
+  });
+
+  // (7 - A) Test Fails
+  test('Is Mercurys life time correct?', () => {
+    expect(user.mercuryLifeTime()).toEqual(45);
   });
 });
