@@ -13,6 +13,7 @@ export class Sagan {
     this.lifeTime = lifeTime;
   }
 
+  // Calculates age on earth
   earthAge () {
     return Math.floor(this.age);
   }

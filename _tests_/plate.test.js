@@ -9,10 +9,17 @@ describe('Age', () => {
   beforeEach (() => {
     let testDay = new Date();
     earthTest = 27;
-    testDay.setFullYear()
+    testDay.setFullYear(testDay.getFullYear() - earthTest);
+    user = new Sagan(testDay.toString())
   });
 
-  test('Earth age in correct', () => {
-    
+  // Test Fails
+  test('Is Earth age correct?', () => {
+    expect(user.earthAge()).toEqual(earthTest);
+  });
+
+  // Test Passes
+  test('Is Earth age correct?', () => {
+    expect(user.earthAge()).toEqual(earthTest);
   });
 });

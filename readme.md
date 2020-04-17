@@ -1,6 +1,6 @@
 # _Galactic Age Calculator_
 
-#### April 14rd, 2020
+#### April 17rd, 2020
 
 ## Description
 
