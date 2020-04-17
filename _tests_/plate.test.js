@@ -114,5 +114,11 @@ describe('Life Time', () => {
   // (9 - A) Test Fails
   test('Is Mars life time correct?', () => {
     expect(user.marsLifeTime()).toEqual(300)
-  })
+  });
+  // (9 - B) Test Passes
+  test('Is Mars life time correct?', () => {
+    let alien = (earthTest / 1.88);
+    let spaceBound = (lifeTime / 1.88);
+    expect(user.marsLifeTime()).toEqual(Math.floor(spaceBound - alien));
+  });
 });
