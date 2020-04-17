@@ -142,7 +142,7 @@ describe('AmIDeadYet', () => {
   let lifeTime;
 
   // Activates before each subsequent test
-  beforeEach( () => {
+  beforeEach(() => {
     earthTest = 100;
     lifeTime = 79;
     let testDay = new Date();

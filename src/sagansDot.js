@@ -1,4 +1,4 @@
-// variable multipliers for each planet
+// Constants for each planet
 const mercurianAge = 0.24;
 const venitianAge = 0.62;
 const martianAge = 1.88;
