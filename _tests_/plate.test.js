@@ -121,4 +121,9 @@ describe('Life Time', () => {
     let spaceBound = (lifeTime / 1.88);
     expect(user.marsLifeTime()).toEqual(Math.floor(spaceBound - alien));
   });
+
+  // (10 - A) Test Fails
+  test('Is Jupiter life time correct?', () => {
+    expect(user.jupiterLifeTime()).toEqual(7)
+  });
 });
