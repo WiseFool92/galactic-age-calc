@@ -41,4 +41,9 @@ describe('Age', () => {
     let alienAge = Math.floor(earthTest / .62);
     expect(user.venusAge()).toEqual(alienAge);
   })
+
+  // (4 - A) Test Fails
+  test('Is Mars age correct?', () => {
+    expect(user.marsAge()).toEqual(89);
+  });
 });
