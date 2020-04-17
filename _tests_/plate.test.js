@@ -82,4 +82,9 @@ describe('Life Time', () => {
   test('Is Earths Life Time correct?', () => {
     expect(user.earthLifeTime()).toEqual(12);
   });
+
+  // (6 -B) Test Passes
+  test('Is Earths life Time correct?', () => {
+    expect(user.earthLifeTime()).toEqual(lifeTime - earthTest);
+  });
 });
