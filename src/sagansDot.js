@@ -4,9 +4,16 @@ const venitianAge = 0.62;
 const martianAge = 1.88;
 const jovianAge = 11.86;
 
-// Class object that will wrap around all our functions
+// Class object that will wrap around all our methods & functions
 export class Sagan {
-  constructor() {
-    
+  constructor(birthDate, lifeTime) {
+    let currentYear = new Date().getFullYear();
+    this.birthYear = new Date(birthDate).getFullYear();
+    this.age = currentYear - this.birthYear;
+    this.lifeTime = lifeTime;
+  }
+
+  earthAge () {
+    return Math.floor(this.age);
   }
 }
