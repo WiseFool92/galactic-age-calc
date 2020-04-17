@@ -1,10 +1,10 @@
-# _My Plate_
+# _Galactic Age Calculator_
 
 #### April 14rd, 2020
 
 ## Description
 
-_This template creates a specialized environment_
+_This program creates a specialized celestial body age calculator that will tell a user how old they are based on a planets solar years_
 
 _This site is already linked to an index.html, styles.css, jQuery.js(3.4.1), scripts.js., main.js, jest, babel, lint, webpack, json, & gitignore_
 
@@ -42,23 +42,27 @@ git clone {link to repository}
 ## Specs
 
 ### Behavior Driven Development Spec List
-#### My Plate
+#### Galactic Age Calculator
 |                          Behavior                          | Input  | Output  |
 | :--------------------------------------------------------: | :----: | :-----: |
-| The program  | '' | ''  |
-| The program  | '' | '' |
-| The program  | '' | '' |
+| The program will accept users date of birth and return their age in earth years | 'July 26th 1992' | '27'  |
+| The program will return users age in Mercury years (.24 Earth years) | '27' | '112.5 Mercurian years' |
+| The program will return users age in Venus years (.62 Earth years) | '27' | '43.548 Venitian years' |
+| The program will return users age in Mars years (1.88 Earth years) | '27' | '14.36 Martian years'
+| The program will return users age in Jupiter years (11.86 Earth years) | '27' | '2.276 Jovian years'
+| The program will determine users average life expectancy for their demographic and return how many years they have left | 'Caucasian' | '78.9' |
+| The program will determine if the users surpassed this expectation and return how many years they have lived past their life expectancy | '27' | '0' |
 
 
 
 ---
 ## Known Bugs
 
-_N/A_ - 4/14/2020
+_N/A_ - 4/17/2020
 
 ## gh-pages
 
-WiseFool92.github.io/my-plate
+WiseFool92.github.io/galactic-age-calc
 
 ## Support
 
