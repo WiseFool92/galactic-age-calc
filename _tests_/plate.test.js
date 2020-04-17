@@ -133,3 +133,29 @@ describe('Life Time', () => {
     expect(user.jupiterLifeTime()).toEqual(Math.floor(spaceBound - alien));
   });
 });
+
+// AM I DEAD YET BLOCK //
+// Test if you have surpassed your expected life time
+describe('AmIDeadYet', () => {
+  let earthTest;
+  let user;
+  let lifeTime;
+
+  // Activates before each subsequent test
+  beforeEach( () => {
+    earthTest = 100;
+    lifeTime = 79;
+    let testDay = new Date();
+    testDay.setFullYear(testDay.getFullYear() - earthTest);
+    user = new Sagan(testDay.toString(), lifeTime);
+  });
+
+  // (11 - A) Test Fails
+  test('Am I Dead on Earth Yet?', () => {
+    expect(user.earthLifeTime()).toEqual(112)
+  });
+  // (11 - B) Test Fails
+  test('Am I Dead on Earth Yet?', () => {
+    expect(user.earthLifeTime()).toEqual(earthTest - lifeTime);
+  });
+});
