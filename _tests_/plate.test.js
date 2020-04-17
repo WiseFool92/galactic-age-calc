@@ -152,10 +152,15 @@ describe('AmIDeadYet', () => {
 
   // (11 - A) Test Fails
   test('Am I Dead on Earth Yet?', () => {
-    expect(user.earthLifeTime()).toEqual(112)
+    expect(user.earthLifeTime()).toEqual(112);
   });
   // (11 - B) Test Fails
   test('Am I Dead on Earth Yet?', () => {
     expect(user.earthLifeTime()).toEqual(earthTest - lifeTime);
+  });
+
+  // (12 - A) Test Fails
+  test('Am I Dead on Mars Yet?', () => {
+    expect(user.marsLifeTime()).toEqual(96);
   });
 });
