@@ -62,3 +62,24 @@ describe('Age', () => {
     expect(user.jupiterAge()).toEqual(alienAge);
   });
 });
+
+// Test life time on various celestial bodies
+describe('Life Time', () => {
+  let earthTest;
+  let user;
+  let lifeTime;
+
+  // Activates for each subsequent test below
+  beforeEach(() => {
+    earthTest = 27;
+    lifeTime = 79;
+    let testDay = new Date();
+    testDay.setFullYear(testDay.getFullYear() - earthTest);
+    user = new Sagan(testDay.toString(), lifeTime);
+  });
+
+  // (6 - A) Test Fails
+  test('Is Earths Life Time correct?', () => {
+    expect(user.earthLifeTime()).toEqual(12);
+  });
+});
