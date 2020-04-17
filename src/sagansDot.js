@@ -21,4 +21,8 @@ export class Sagan {
   mercuryAge () {
     return Math.floor(this.age / mercurianAge);
   }
+  // Calculates age on Venus
+  venusAge () {
+    return Math.floor(this.age / venitianAge);
+  }
 }
