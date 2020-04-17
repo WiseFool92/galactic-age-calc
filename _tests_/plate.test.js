@@ -91,4 +91,10 @@ describe('Life Time', () => {
   test('Is Mercurys life time correct?', () => {
     expect(user.mercuryLifeTime()).toEqual(45);
   });
+  // (7 - B) Test Passes
+  test('Is Mercurys life tiem correct?', () => {
+    let alien = (earthTest / .24);
+    let spaceBound = (lifeTime / .24);
+    expect(user.mercuryLifeTime()).toEqual(Math.floor(spaceBound - alien)); 
+  });
 });
