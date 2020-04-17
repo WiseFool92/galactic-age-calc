@@ -29,4 +29,8 @@ export class Sagan {
   marsAge () {
     return Math.floor(this.age / martianAge);
   }
+  // Calculates age on Jupiter
+  jupiterAge () {
+    return Math.floor(this.age / 11.86);
+  }
 }
