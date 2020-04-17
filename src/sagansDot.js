@@ -31,6 +31,11 @@ export class Sagan {
   }
   // Calculates age on Jupiter
   jupiterAge () {
-    return Math.floor(this.age / 11.86);
+    return Math.floor(this.age / jovianAge);
+  }
+  
+  // Calculates life time on Earth
+  earthLifeTime() {
+    return Math.abs(Math.abs(Math.floor(this.lifeTime - this.age)));
   }
 }
