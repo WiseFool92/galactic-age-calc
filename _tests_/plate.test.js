@@ -13,13 +13,17 @@ describe('Age', () => {
     user = new Sagan(testDay.toString())
   });
 
-  // Test Fails
+  // (1 - A) Test Fails
   test('Is Earth age correct?', () => {
     expect(user.earthAge()).toEqual(25);
   });
-
-  // Test Passes
+  // (1 - B) Test Passes
   test('Is Earth age correct?', () => {
     expect(user.earthAge()).toEqual(earthTest);
+  });
+
+  // (2 - A) Test Fails
+  test('Is Mercury age correct?', () => {
+    expect(user.mercuryAge()).toEqual(100)
   });
 });
