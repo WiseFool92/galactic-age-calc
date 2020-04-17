@@ -35,7 +35,11 @@ export class Sagan {
   }
   
   // Calculates life time on Earth
-  earthLifeTime() {
+  earthLifeTime () {
     return Math.abs(Math.abs(Math.floor(this.lifeTime - this.age)));
+  }
+  // Calculates age on Mercury
+  mercuryLifeTime () {
+    return Math.abs(Math.floor((this.lifeTime / mercurianAge) - (this.age / mercurianAge)));
   }
 }
