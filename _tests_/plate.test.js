@@ -40,7 +40,7 @@ describe('Age', () => {
   test('Is Venus age correct?' , () => {
     let alienAge = Math.floor(earthTest / .62);
     expect(user.venusAge()).toEqual(alienAge);
-  })
+  });
 
   // (4 - A) Test Fails
   test('Is Mars age correct?', () => {
@@ -50,10 +50,15 @@ describe('Age', () => {
   test('Is Mars age correct?', () => {
     let alienAge = Math.floor(earthTest / 1.88);
     expect(user.marsAge()).toEqual(alienAge);
-  })
+  });
 
   // (5 - A) Test Fails
   test('Is Jupiter age correct?', () => {
     expect(user.jupiterAge()).toEqual(200);
-  })
+  });
+  // (5 - B) Test Passes
+  test('Is jupiters age correct?', () => {
+    let alienAge = Math.floor(earthTest / 11.86);
+    expect(user.jupiterAge()).toEqual(alienAge);
+  });
 });
