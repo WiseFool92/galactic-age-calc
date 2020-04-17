@@ -127,7 +127,7 @@ describe('Life Time', () => {
     expect(user.jupiterLifeTime()).toEqual(7)
   });
   // (10 - B) Test Passes
-  test('Is jupiter life tiem correct?', () => {
+  test('Is Jupiter life time correct?', () => {
     let alien = (earthTest / 11.86);
     let spaceBound = (lifeTime / 11.86);
     expect(user.jupiterLifeTime()).toEqual(Math.floor(spaceBound - alien));
@@ -154,13 +154,24 @@ describe('AmIDeadYet', () => {
   test('Am I Dead on Earth Yet?', () => {
     expect(user.earthLifeTime()).toEqual(112);
   });
-  // (11 - B) Test Fails
+  // (11 - B) Test Passes
   test('Am I Dead on Earth Yet?', () => {
     expect(user.earthLifeTime()).toEqual(earthTest - lifeTime);
   });
 
-  // (12 - A) Test Fails
-  test('Am I Dead on Mars Yet?', () => {
-    expect(user.marsLifeTime()).toEqual(96);
-  });
+  // // (12 - A) Test Fails
+  // test('Am I Dead on Mercury Yet?', () => {
+  //   expect(user.mercuryLifeTime()).toEqual(96);
+  // });
+  // // (12 - B) Test Passes
+  // test('Am I Dead on Mercury Yet?', () => {
+  //   let alien = (earthTest / .24);
+  //   let spaceBound = (lifeTime / .24);
+  //   expect(user.mercuryLifeTime()).toEqual(Math.floor(alien - spaceBound));
+  // });
+
+  // // (13 - A) Test Fails
+  // test('Am I Dead on Venus Yet?', () => {
+  //   expect(user.venusLifeTime()).toEqual(149);
+  // });
 });
