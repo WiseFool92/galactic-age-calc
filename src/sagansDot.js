@@ -13,6 +13,7 @@ export class Sagan {
     this.lifeTime = lifeTime;
   }
 
+  // AGE BLOCK //
   // Calculates age on Earth
   earthAge () {
     return Math.floor(this.age);
@@ -34,12 +35,17 @@ export class Sagan {
     return Math.floor(this.age / jovianAge);
   }
   
+  // LIFE TIME BLOCK // 
   // Calculates life time on Earth
   earthLifeTime () {
     return Math.abs(Math.abs(Math.floor(this.lifeTime - this.age)));
   }
-  // Calculates age on Mercury
+  // Calculates life time on Mercury
   mercuryLifeTime () {
     return Math.abs(Math.floor((this.lifeTime / mercurianAge) - (this.age / mercurianAge)));
+  }
+  // Calculates life time on Venus
+  venusLifeTime () {
+    return Math.abs(Math.floor((this.lifeTime / venitianAge) - (this.age / venitianAge)));
   }
 }
