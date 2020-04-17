@@ -1,7 +1,7 @@
 import { Sagan } from './../src/sagansDot.js';
 
 // AGE BLOCK //
-// tests ages across various celestial bodies
+// Tests ages across various celestial bodies
 describe('Age', () => {
   let earthTest;
   let user;
@@ -125,5 +125,11 @@ describe('Life Time', () => {
   // (10 - A) Test Fails
   test('Is Jupiter life time correct?', () => {
     expect(user.jupiterLifeTime()).toEqual(7)
+  });
+  // (10 - B) Test Passes
+  test('Is jupiter life tiem correct?', () => {
+    let alien = (earthTest / 11.86);
+    let spaceBound = (lifeTime / 11.86);
+    expect(user.jupiterLifeTime()).toEqual(Math.floor(spaceBound - alien));
   });
 });
