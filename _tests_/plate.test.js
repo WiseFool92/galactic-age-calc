@@ -46,4 +46,9 @@ describe('Age', () => {
   test('Is Mars age correct?', () => {
     expect(user.marsAge()).toEqual(89);
   });
+  // (4 - B) Test Passes
+  test('Is Mars age correct?', ( ) => {
+    let alienAge = Math.floor(earthTest / 1.88);
+    expect(user.marsAge()).toEqual(alienAge);
+  })
 });
