@@ -1,5 +1,6 @@
 import { Sagan } from './../src/sagansDot.js';
 
+// AGE BLOCK //
 // tests ages across various celestial bodies
 describe('Age', () => {
   let earthTest;
@@ -63,6 +64,7 @@ describe('Age', () => {
   });
 });
 
+// LIFE TIME BLOCK //
 // Test life time on various celestial bodies
 describe('Life Time', () => {
   let earthTest;
@@ -92,9 +94,14 @@ describe('Life Time', () => {
     expect(user.mercuryLifeTime()).toEqual(45);
   });
   // (7 - B) Test Passes
-  test('Is Mercurys life tiem correct?', () => {
+  test('Is Mercurys life time correct?', () => {
     let alien = (earthTest / .24);
     let spaceBound = (lifeTime / .24);
     expect(user.mercuryLifeTime()).toEqual(Math.floor(spaceBound - alien)); 
   });
+
+  // (8 - A) Test Fails
+  test('Is Venus life time correct?', () => {
+    expect(user.venusLifeTime()).toEqual(54);
+  })
 });
